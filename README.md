@@ -22,8 +22,8 @@ This project examines how private vehicle travel patterns changed after the impl
 - **Treatment group:** Trips entering the CRZ  
 - **Control group:** Trips entering Upper Manhattan (UM)
 - DID compares pre/post differences across treated and control groups.  
-- Estimated model:  
-  `ln(Y_it) = β0 + β1 Zone_i + β2 Time_t + δ (Zone_i × Time_t) + ε_it`    
+<!-- - Estimated model:  
+  `ln(Y_it) = β0 + β1 Zone_i + β2 Time_t + δ (Zone_i × Time_t) + ε_it`     -->
   
 
 ### **2. Two-Way Fixed Effects (TWFE)**
@@ -31,17 +31,16 @@ To account for unobserved heterogeneity:
 - **OD-pair fixed effects** (ui)  
 - **Time fixed effects** (vt)  
 
-Final model:  
-`ln(Y_it) = δ D_it + β2 Time_t + u_i + ε_it`
+<!-- Final model:   -->
+<!-- `ln(Y_it) = δ D_it + β2 Time_t + u_i + ε_it` -->
 
 ### **3. Spatial Analysis Levels**
 #### **Macro-Level: CRZ vs UM**
 Provides a stable comparison by reducing fragmentation across OD pairs.
 
 #### **Micro-Level: Census Tracts**
-Allows inclusion of **trip duration** as a control variable.  
-Model:  
-`ln(Y_it) = δ D_it + β2 Time_t + γ ln(Duration_it) + u_i + ε_it`   
+Explores the effect at a more granular level: OD pairs of census tracts.
+<!-- `ln(Y_it) = δ D_it + β2 Time_t + γ ln(Duration_it) + u_i + ε_it`    -->
 
 ---
 ## Results 
